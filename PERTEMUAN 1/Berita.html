@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-...your-integrity-hash..." crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        @keyframes slideIn {
+            0% {
+                transform: scale(0.9) translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .animate-slide-in {
+            animation: slideIn 1s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <div class="flex h-screen">
+
+        <div class="w-72 bg-gradient-to-b from-teal-600 to-teal-800 text-white p-6">
+            <h2 class="text-3xl font-bold mb-6 text-center">Dashboard</h2>
+            <nav class="space-y-4">
+                <a href="Home.html" class="flex items-center py-2 px-4 rounded-md hover:bg-teal-700 transition">
+                    <i class="fas fa-home mr-3"></i> Home
+                </a>
+                <a href="Profile.html" class="flex items-center py-2 px-4 rounded-md hover:bg-teal-700 transition">
+                    <i class="fas fa-user mr-3"></i> Profile
+                </a>
+                <a href="Tabel.html" class="flex items-center py-2 px-4 rounded-md hover:bg-teal-700 transition">
+                    <i class="fas fa-table mr-3"></i> Tabel Mahasiswa
+                </a>
+                <a href="InputFormulir.html" class="flex items-center py-2 px-4 rounded-md hover:bg-teal-700 transition">
+                    <i class="fas fa-edit mr-3"></i> Input Formulir
+                </a>
+                <a href="Berita.html" class="flex items-center py-2 px-4 rounded-md bg-teal-700 hover:bg-teal-800 transition">
+                    <i class="fas fa-newspaper mr-3"></i> Berita
+                </a>
+            </nav>
+        </div>
+
+        <div class="flex-1 p-8">
+            <h1 class="text-4xl font-bold mb-6 text-gray-900">Berita Terbaru</h1>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-xl animate-slide-in">
+                    <img class="w-full h-48 object-cover" src="Berita1.JPG" alt="Berita 1">
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">Mantap, 2 BUMN Masuk Daftar Time World's Best Companies 2024</h2>
+                        <p class="text-gray-700 mb-4">Dalam daftar Perusahaan terbaik tersebut disebutkan BNI menduduki peringkat 892, dan Bank Mandiri pada ranking 914. Adapun tiga Perusahaan asal Indonesia lainnya adalah Astra International yang menduduki peringkat 435, kemudian Adaro Energy di posisi 908, dan ⁠Charoen Phokphand Indonesia di peringkat 961.</p>
+                        <a href="#" class="text-teal-500 hover:underline">Baca Selengkapnya</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-xl animate-slide-in">
+                    <img class="w-full h-48 object-cover" src="Berita2.JPG" alt="Berita 2">
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">Apa Itu Zaken Kabinet yang Akan Dibentuk Pemerintahan Prabowo?</h2>
+                        <p class="text-gray-700 mb-4">Presiden terpilih Prabowo Subianto disebut-disebut akan membentuk zaken kabinet untuk membantu pemerintahannya di 2024-2029.
+                            "Pak Prabowo ingin pemerintahan yang dipimpinnya nanti adalah zaken kabinet, di mana orang-orang yang duduk di kementerian benar-benar ahli," kata Sekretaris Jenderal Partai Gerindra Ahmad Muzani di Gedung DPR RI, Jakarta, Senin (9/9).</p>
+                        <a href="#" class="text-teal-500 hover:underline">Baca Selengkapnya</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-xl animate-slide-in">
+                    <img class="w-full h-48 object-cover" src="Berita3.JPG" alt="Berita 3">
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">Potensi Laut RI Melimpah, Tapi Baru Sumbang 7,9 Persen PDB</h2>
+                        <p class="text-gray-700 mb-4">Kementerian Koordinator Bidang Kemaritiman dan Investasi (Kemenko Marves) menyatakan meski sekitar 70 persen wilayah Indonesia lautan, namun kontribusinya terhadap produk domestik bruto (PDB) sangat rendah.</p>
+                        <a href="#" class="text-teal-500 hover:underline">Baca Selengkapnya</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

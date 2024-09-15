@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Mahasiswa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-...your-integrity-hash..." crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        @keyframes slideIn {
+            0% {
+                transform: scale(0.9) translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .animate-slide-in {
+            animation: slideIn 1s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <div class="flex h-screen">
+
+        <div class="w-72 bg-gradient-to-b from-teal-500 to-teal-800 text-white p-6">
+            <h2 class="text-3xl font-bold mb-6 text-center">Dashboard</h2>
+            <nav class="space-y-4">
+                <a href="Home.html" class="flex items-center py-2 px-4 rounded-md hover:bg-teal-700 transition">
+                    <i class="fas fa-home mr-3"></i> Home
+                </a>
+                <a href="Profile.html" class="flex items-center py-2 px-4 rounded-md hover:bg-teal-700 transition">
+                    <i class="fas fa-user mr-3"></i> Profile
+                </a>
+                <a href="Tabel.html" class="flex items-center py-2 px-4 rounded-md bg-teal-700 hover:bg-teal-800 transition">
+                    <i class="fas fa-table mr-3"></i> Tabel Mahasiswa
+                </a>
+                <a href="InputFormulir.html" class="flex items-center py-2 px-4 rounded-md hover:bg-teal-700 transition">
+                    <i class="fas fa-edit mr-3"></i> Input Formulir
+                </a>
+                <a href="Berita.html" class="flex items-center py-2 px-4 rounded-md hover:bg-teal-700 transition">
+                    <i class="fas fa-newspaper mr-3"></i> Berita
+                </a>
+            </nav>
+        </div>
+
+        <div class="flex-1 p-8">
+            <h1 class="text-4xl font-bold mb-6 text-gray-900">Tabel Mahasiswa</h1>
+
+            <div class="mb-6 flex items-center">
+                <input type="text" placeholder="Cari mahasiswa..." class="w-full md:w-1/3 lg:w-1/4 px-4 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 transition duration-300">
+            </div>
+
+            <div class="overflow-x-auto bg-white shadow-md rounded-lg">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-teal-500 text-white">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Nama</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">NIM</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Kelas</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Jenis Kelamin</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Profile</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Muhammad Azkal Azkiya</a></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2307781</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">B</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Laki-laki</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <a href="Profile.html?id=2307781" class="text-teal-600 hover:underline">View Profile</a>
+                            </td>
+                        </tr>
+                        <tr></tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Habibirohim</a></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2307772</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">B</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Laki-laki</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <a href="Profile.html?id=2307781" class="text-teal-600 hover:underline">View Profile</a>
+                            </td>
+                        </tr>
+                        <tr></tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Angga Fadzar</a></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2307745</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">B</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Laki-laki</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <a href="Profile.html?id=2307781" class="text-teal-600 hover:underline">View Profile</a>
+                            </td>
+                        </tr>
+                        <tr></tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Shofia Nabila</a></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2300000</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">B</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Laki-laki</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <a href="Profile.html?id=2307781" class="text-teal-600 hover:underline">View Profile</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

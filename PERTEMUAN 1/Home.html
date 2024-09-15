@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-...your-integrity-hash..." crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        .hover-bg-gray-700:hover {
+            background-color: #4b5563;
+        }
+    </style>
+</head>
+<body class="bg-gray-200">
+
+    <div class="flex h-screen">
+
+        <div class="w-72 bg-gradient-to-b from-teal-600 to-teal-800 text-white p-6">
+            <h2 class="text-3xl font-bold mb-6 text-center">Dashboard</h2>
+            <nav class="space-y-4">
+                <a href="Home.html" class="flex items-center py-2 px-4 rounded-md hover-bg-gray-700">
+                    <i class="fas fa-home mr-3"></i> Home
+                </a>
+                <a href="Profile.html" class="flex items-center py-2 px-4 rounded-md hover-bg-gray-700">
+                    <i class="fas fa-user mr-3"></i> Profile
+                </a>
+                <a href="latihan4.html" class="flex items-center py-2 px-4 rounded-md hover-bg-gray-700">
+                    <i class="fas fa-table mr-3"></i> Tabel Mahasiswa
+                </a>
+                <a href="latihan6.html" class="flex items-center py-2 px-4 rounded-md hover-bg-gray-700">
+                    <i class="fas fa-edit mr-3"></i> Input Formulir
+                </a>
+                <a href="Latihan3.html" class="flex items-center py-2 px-4 rounded-md hover-bg-gray-700">
+                    <i class="fas fa-newspaper mr-3"></i> Berita
+                </a>
+            </nav>
+        </div>
+
+        <div class="flex-1 p-8">
+            <h1 class="text-4xl font-bold mb-6 text-gray-900">Database Mahasiswa</h1>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-white shadow-md rounded-lg p-6 transform transition-transform hover:scale-105 hover:shadow-xl">
+                    <h3 class="text-2xl font-semibold mb-4">Profile Mahasiswa</h3>
+                    <p class="text-gray-700 mb-4">Menu ini memungkinkan mahasiswa untuk melihat dan mengelola informasi pribadi mereka, seperti nama, NIM, kelas, dan detail profil lainnya. Pengguna bisa memperbarui atau mengedit informasi yang diperlukan.</p>
+                    <a href="Profile.html" class="text-teal-500 hover:underline">Go to Profile</a>
+                </div>
+
+                <div class="bg-white shadow-md rounded-lg p-6 transform transition-transform hover:scale-105 hover:shadow-xl">
+                    <h3 class="text-2xl font-semibold mb-4">Tabel Mahasiswa</h3>
+                    <p class="text-gray-700 mb-4">Menu ini menampilkan daftar lengkap mahasiswa dalam bentuk tabel. Informasi yang ditampilkan biasanya mencakup nama, NIM, kelas, dan data akademik lainnya. Ini memudahkan akses cepat ke data mahasiswa secara terstruktur.</p>
+                    <a href="Tabel.html" class="text-teal-500 hover:underline">Go to Tabel Mahasiswa</a>
+                </div>
+
+                <div class="bg-white shadow-md rounded-lg p-6 transform transition-transform hover:scale-105 hover:shadow-xl">
+                    <h3 class="text-2xl font-semibold mb-4">Input Formulir</h3>
+                    <p class="text-gray-700 mb-4">Menu ini digunakan untuk mengisi formulir tertentu, seperti pendaftaran, laporan, atau data akademik lainnya. Pengguna bisa memasukkan data yang diperlukan melalui formulir ini untuk berbagai keperluan administratif atau akademik.</p>
+                    <a href="InputFormulir.html" class="text-teal-500 hover:underline">Go to Input Formulir</a>
+                </div>
+
+                <div class="bg-white shadow-md rounded-lg p-6 transform transition-transform hover:scale-105 hover:shadow-xl">
+                    <h3 class="text-2xl font-semibold mb-4">Berita</h3>
+                    <p class="text-gray-700 mb-4">Menu ini menyediakan berita terbaru terkait kampus, dunia akademik, atau informasi penting lainnya. Pengguna bisa mendapatkan pembaruan berita dan informasi terbaru yang relevan dengan lingkungan mahasiswa dan pendidikan.</p>
+                    <a href="Berita.html" class="text-teal-500 hover:underline">Go to Berita</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
