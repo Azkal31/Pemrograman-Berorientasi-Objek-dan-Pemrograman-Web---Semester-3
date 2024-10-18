@@ -1,0 +1,108 @@
+/* Styling Global */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6); /* Gradien untuk background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px 30px; /* Padding diatur agar lebih proporsional */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Bayangan yang lebih halus */
+    width: 350px; /* Ukuran kotak yang lebih tepat */
+    text-align: center;
+    box-sizing: border-box; /* Memastikan padding tidak menambah lebar */
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px; /* Tambahkan lebih banyak ruang di bawah judul */
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 8px; /* Beri jarak yang lebih baik antara label dan input */
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box; /* Pastikan padding tidak melebihi lebar */
+    transition: border-color 0.3s ease;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #3498db; /* Ubah warna border saat input fokus */
+    outline: none; /* Hilangkan outline default */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px); /* Tambah efek hover */
+}
+
+button:active {
+    background-color: #1abc9c; /* Efek klik */
+    transform: translateY(1px);
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Animasi saat kotak muncul */
+.container {
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
